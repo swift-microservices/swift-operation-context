@@ -1,5 +1,7 @@
 # Swift Operation Context
 
+[![Documentation](https://img.shields.io/badge/docc-read_documentation-blue)](https://swiftpackageindex.com/swift-microservices/swift-operation-context/documentation)
+
 `OperationContext` is a lightweight, zero-dependency container for propagating typed values
 between Swift tasks and functions. Libraries can use it to carry identity, credentials, or
 database settings without depending on each other's domain types.
@@ -70,7 +72,7 @@ Add the product to your target's dependencies:
 
 ## Documentation
 
-See the [DocC documentation](Sources/OperationContext/Documentation.docc/OperationContext.md)
+See the [DocC documentation](https://swiftpackageindex.com/swift-microservices/swift-operation-context/documentation)
 for key design, nested scopes, and propagation boundaries. Authentication, authorization, and
 database policy enforcement belong to consuming libraries; this package provides value propagation.
 
