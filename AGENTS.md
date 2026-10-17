@@ -25,10 +25,13 @@ This package provides typed, scoped value propagation shared by independent libr
   do not add custom verification scripts or intentionally invalid compiler fixtures.
 - Never commit `Package.resolved`. Consumers depend on published tags. Do not describe local
   checks as successful Linux CI.
-- Keep CI aligned with the other swift-microservices libraries: shared Linux tests/builds
-  for Swift 6.3/6.4 and snapshots, PR soundness, static SDK builds, Foundation-linking checks,
-  SemVer labels, and manual releases. The DocC target is `OperationContext`.
-- macOS 15 is the deliberate supported runtime baseline; Linux CI uses Ubuntu 24.04.
+- Keep CI aligned with the other swift-microservices libraries: swiftlang's
+  `swift_package_test.yml` runs `swift test -c release` on Swift 6.3, 6.4, and the next and main
+  snapshots, with static SDK builds on PRs; PR soundness; one Foundation-linking check on 6.3;
+  SemVer labels; and manual releases. Every workflow and action is pinned by commit. Tests run
+  in release mode because the package has no `assert` or `#if DEBUG` code; add a debug test
+  job if it gains some. The DocC target is `OperationContext`.
+- macOS 15 is the deliberate supported runtime baseline; Linux CI uses Ubuntu 24.04 (Noble).
   No support guarantee for other Apple OSes or older macOS. See README platform requirements.
 - Each PR uses exactly one SemVer label. Auto Release is manually triggered on main after
   a remote exists. Do not create a remote, publish, or release without user authorization.
