@@ -27,8 +27,9 @@ This package provides typed, scoped value propagation shared by independent libr
   checks as successful Linux CI.
 - macOS 15 is the deliberate supported runtime baseline; Linux CI uses Ubuntu 24.04 (Noble).
   No support guarantee for other Apple OSes or older macOS. See README platform requirements.
-- Each PR uses exactly one SemVer label. Auto Release is manually triggered on main after
-  a remote exists. Do not create a remote, publish, or release without user authorization.
+- Each PR uses exactly one SemVer label. The Release workflow is manually triggered on main
+  and refuses `⚠️ semver/major`; major releases are created by hand. Do not publish or release
+  without user authorization.
 
 ## CI
 
