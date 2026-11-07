@@ -61,7 +61,7 @@ Requires Swift 6.3 or later. Supported platforms are Linux and macOS 15 or later
 Add the package to your `Package.swift` dependencies:
 
 ```swift
-.package(url: "https://github.com/swift-microservices/swift-operation-context.git", from: "0.1.0")
+.package(url: "https://github.com/swift-microservices/swift-operation-context.git", from: "1.0.0")
 ```
 
 Add the product to your target's dependencies:
