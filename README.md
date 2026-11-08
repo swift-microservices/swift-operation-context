@@ -193,8 +193,7 @@ Packages built on this one:
 
 - [swift-authentication](https://github.com/swift-microservices/swift-authentication) — binds the
   caller's principal in the context for the length of a call, with transport integrations for
-  [gRPC](https://github.com/swift-microservices/swift-authentication-grpc),
-  [Vapor](https://github.com/swift-microservices/swift-authentication-vapor) and
+  [gRPC](https://github.com/swift-microservices/swift-authentication-grpc) and
   [Hummingbird](https://github.com/swift-microservices/swift-authentication-hummingbird).
 - [swift-persistence-postgres](https://github.com/swift-microservices/swift-persistence-postgres)
   — reads per-operation Postgres settings from the context.
